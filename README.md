@@ -1,1 +1,3 @@
-# BrackeysJam
+# Brackeys Jam
+
+Theme: Light
