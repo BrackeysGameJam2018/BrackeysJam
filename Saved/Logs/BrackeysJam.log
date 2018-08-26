@@ -1,4 +1,4 @@
-﻿Log file open, 08/25/18 15:53:08
+﻿Log file open, 08/26/18 15:18:12
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: BrackeysJam
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.290510
+LogStats: Stats thread started at 0.281320
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: -8:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -46,6 +46,8 @@ LogPluginManager: Mounting plugin CharacterAI
 LogPluginManager: Mounting plugin GeometryCache
 LogPluginManager: Mounting plugin HTML5Networking
 LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin NiagaraExtras
 LogPluginManager: Mounting plugin MagicLeap
 LogPluginManager: Mounting plugin MagicLeapEmulator
 LogPluginManager: Mounting plugin MagicLeapMedia
@@ -94,7 +96,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin FMODStudio
-LogStreaming: Display: Took  0.111s to configure plugins.
+LogStreaming: Display: Took  0.408s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -148,547 +150,375 @@ LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC
 LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
-LogStreaming: Display: Took  0.001s to delete old logs.
+LogStreaming: Display: Took  0.027s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.08.25-22.53.08:896][  0]LogInit: Selected Device Profile: [Windows]
-[2018.08.25-22.53.08:896][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.08.25-22.53.08:912][  0]LogHAL: Display: Platform has ~ 16 GB [17059098624 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.08.25-22.53.08:912][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2018.08.25-22.53.08:912][  0]LogInit: Going up to parent DeviceProfile []
-[2018.08.25-22.53.08:913][  0]LogInit: Computer: ZEHX-LAPTOP
-[2018.08.25-22.53.08:913][  0]LogInit: User: Zehx
-[2018.08.25-22.53.08:913][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.08.25-22.53.08:913][  0]LogInit: High frequency timer resolution =2.742192 MHz
-[2018.08.25-22.53.08:913][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.08.25-22.53.08:913][  0]LogMemory: Platform Memory Stats for Windows
-[2018.08.25-22.53.08:913][  0]LogMemory: Process Physical Memory: 99.75 MB used, 99.75 MB peak
-[2018.08.25-22.53.08:913][  0]LogMemory: Process Virtual Memory: 91.04 MB used, 91.04 MB peak
-[2018.08.25-22.53.08:914][  0]LogMemory: Physical Memory: 7117.22 MB used,  9151.60 MB free, 16268.82 MB total
-[2018.08.25-22.53.08:914][  0]LogMemory: Virtual Memory: 4640.38 MB used,  9151.60 MB free, 134217728.00 MB total
-[2018.08.25-22.53.08:934][  0]LogInit: Using OS detected language (en-US).
-[2018.08.25-22.53.08:934][  0]LogInit: Using OS detected locale (en-CA).
-[2018.08.25-22.53.08:934][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.08.25-22.53.09:379][  0]LogStreaming: Display: Took  0.445s to InitEngineTextLocalization.
-[2018.08.25-22.53.09:379][  0]LogInit: Setting process to per monitor DPI aware
-[2018.08.25-22.53.09:424][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.08.25-22.53.09:424][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.08.25-22.53.09:663][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.08.25-22.53.09:663][  0]LogD3D11RHI: D3D11 adapters:
-[2018.08.25-22.53.09:718][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
-[2018.08.25-22.53.09:718][  0]LogD3D11RHI:       4053/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.08.25-22.53.09:727][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
-[2018.08.25-22.53.09:727][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2018.08.25-22.53.09:729][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.08.25-22.53.09:729][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.08.25-22.53.09:729][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.08.25-22.53.09:750][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.08.25-22.53.09:750][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8c (for the marketing name, search the web for "GPU Device Id")
-[2018.08.25-22.53.09:750][  0]LogWindows: EnumDisplayDevices:
-[2018.08.25-22.53.09:751][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:0 D:1)
-[2018.08.25-22.53.09:751][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:1 D:1)
-[2018.08.25-22.53.09:751][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2018.08.25-22.53.09:751][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.08.25-22.53.09:751][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
-[2018.08.25-22.53.09:751][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.08.25-22.53.09:751][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.08.25-22.53.09:751][  0]LogRHI: Texture pool is 2837 MB (70% of 4053 MB)
-[2018.08.25-22.53.09:778][  0]LogD3D11RHI: Async texture creation enabled
-[2018.08.25-22.53.09:789][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2018.08.25-22.53.09:790][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Projects/Game Jams/BrackeysJam/Intermediate/Shaders/WorkingDirectory/11592/).
-[2018.08.25-22.53.09:790][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Zehx/AppData/Local/Temp/UnrealShaderWorkingDir/C447BD1B463B0FEA01AF21B4D62D3233/'.
-[2018.08.25-22.53.10:115][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.08.25-22.53.10:127][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.08.25-22.53.10:143][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.08.25-22.53.10:157][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.08.25-22.53.10:172][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.08.25-22.53.10:185][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.08.25-22.53.10:200][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.08.25-22.53.10:214][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.08.25-22.53.10:220][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:310][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.08.25-22.53.10:311][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.08.25-22.53.10:374][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.08.25-22.53.10:374][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.08.25-22.53.10:402][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.08.25-22.53.10:402][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.08.25-22.53.10:417][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.08.25-22.53.10:429][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.08.25-22.53.10:446][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.08.25-22.53.10:459][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.08.25-22.53.10:471][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.08.25-22.53.10:471][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.08.25-22.53.10:519][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.08.25-22.53.10:519][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.08.25-22.53.10:519][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.08.25-22.53.11:360][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.08.25-22.53.11:434][  0]LogDerivedDataCache: Loaded boot cache 0.07s 71MB C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.08.25-22.53.11:434][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2018.08.25-22.53.11:435][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Projects/Game Jams/BrackeysJam/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.08.25-22.53.11:435][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.08.25-22.53.11:435][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Projects/Game Jams/BrackeysJam/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.08.25-22.53.11:435][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.08.25-22.53.11:450][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.08.25-22.53.11:462][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Zehx/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.08.25-22.53.11:462][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.08.25-22.53.11:462][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.08.25-22.53.11:485][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.08.25-22.53.11:486][  0]LogSlate: Using FreeType 2.6.0
-[2018.08.25-22.53.11:487][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.08.25-22.53.11:568][  0]LogAssetRegistry: FAssetRegistry took 0.0270 seconds to start up
-[2018.08.25-22.53.11:978][  0]LogInit: Selected Device Profile: [Windows]
-[2018.08.25-22.53.12:035][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.08.25-22.53.12:038][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.08.25-22.53.12:038][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.08.25-22.53.12:038][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.08.25-22.53.12:038][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.08.25-22.53.12:169][  0]LogNetVersion: BrackeysJam 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 269005526)
-[2018.08.25-22.53.12:857][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 2 prioritized culture(s) in 0.129950 seconds
-[2018.08.25-22.53.12:866][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
-[2018.08.25-22.53.12:866][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
-[2018.08.25-22.53.12:866][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.08.25-22.53.13:884][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.08.25-22.53.13:897][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.08.25-22.53.14:018][  0]LogFMOD: FFMODStudioModule startup
-[2018.08.25-22.53.14:018][  0]LogFMOD:  Lib path = '../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries'
-[2018.08.25-22.53.14:018][  0]LogFMOD: FFMODStudioModule::LoadDll: Loading ../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries/Win64/fmodL64.dll
-[2018.08.25-22.53.14:020][  0]LogFMOD: FFMODStudioModule::LoadDll: Loading ../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries/Win64/fmodstudioL64.dll
-[2018.08.25-22.53.14:078][  0]LogFMOD: Loading strings bank: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
-[2018.08.25-22.53.14:080][  0]LogFMOD: Error: c:\jk\workspace\1.10_UE4.20_Win64\studio_api\src\fmod_bankmodel.cpp(163) - Failed to open file '../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank'
-
-[2018.08.25-22.53.14:080][  0]LogFMOD: Warning: Failed to load strings bank: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
-[2018.08.25-22.53.14:084][  0]LogFMOD: Default sample rate = 48000
-[2018.08.25-22.53.14:084][  0]LogFMOD: System sample rate = 96000
-[2018.08.25-22.53.14:104][  0]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-22.53.14:111][  0]LogFMOD: Default sample rate = 48000
-[2018.08.25-22.53.14:111][  0]LogFMOD: System sample rate = 96000
-[2018.08.25-22.53.14:115][  0]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-22.53.14:158][  0]SourceControl: Source control is disabled
-[2018.08.25-22.53.14:718][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.08.25-22.53.14:819][  0]LogOcInput: OculusInput pre-init called
-[2018.08.25-22.53.14:824][  0]LogFMOD: FFMODStudioEditorModule startup
-[2018.08.25-22.53.14:904][  0]LogEngine: Initializing Engine...
-[2018.08.25-22.53.14:904][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.08.25-22.53.14:905][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.08.25-22.53.14:905][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.08.25-22.53.14:906][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.08.25-22.53.14:906][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.08.25-22.53.15:183][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.08.25-22.53.15:197][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.08.25-22.53.15:317][  0]LogInit: XAudio2 using 'Aux 1-2 (MOTU MicroBook)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.08.25-22.53.15:325][  0]LogInit: FAudioDevice initialized.
-[2018.08.25-22.53.15:326][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.08.25-22.53.15:466][  0]LogDerivedDataCache: Saved boot cache 0.14s 71MB C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.08.25-22.53.15:483][  0]LogInit: Texture streaming: Enabled
-[2018.08.25-22.53.15:499][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.08.25-22.53.15:514][  0]LogInit: Transaction tracking system initialized
-[2018.08.25-22.53.15:530][  0]BlueprintLog: New page: Editor Load
-[2018.08.25-22.53.15:591][  0]LocalizationService: Localization service is disabled
-[2018.08.25-22.53.15:894][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.08.25-22.53.15:894][  0]LogCook: Display: Mobile HDR setting 1
-[2018.08.25-22.53.15:894][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.08.25-22.53.15:894][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.08.25-22.53.15:894][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.08.25-22.53.15:894][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.08.25-22.53.15:894][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.08.25-22.53.16:015][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/' took 0.01s
-[2018.08.25-22.53.16:015][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.08.25-22.53.16:015][  0]LightingResults: New page: Lighting Build
-[2018.08.25-22.53.16:017][  0]MapCheck: New page: Map Check
-[2018.08.25-22.53.16:017][  0]LightingResults: New page: Lighting Build
-[2018.08.25-22.53.16:258][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2018.08.25-22.53.16:267][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.08.25-22.53.16:293][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.08.25-22.53.16:346][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 52.498ms to complete.
-[2018.08.25-22.53.16:346][  0]LogFileHelpers: Loading map 'Template_Default' took 0.332
-[2018.08.25-22.53.16:483][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-22.53.16:496][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-22.53.16:510][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-22.53.16:523][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-22.53.16:529][  0]LogCollectionManager: Loaded 0 collections in 0.001485 seconds
-[2018.08.25-22.53.16:580][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Saved/Collections/' took 0.01s
-[2018.08.25-22.53.16:580][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/Collections/' took 0.01s
-[2018.08.25-22.53.16:580][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/Collections/' took 0.01s
-[2018.08.25-22.53.16:580][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2018.08.25-22.53.16:591][  0]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 2588 classes and 610 folders.
-[2018.08.25-22.53.16:597][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.08.25-22.53.16:637][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.08.25-22.53.16:641][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2018.08.25-22.53.16:738][  0]LogSlate: Took 0.000979 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.08.25-22.53.16:741][  0]LogSlate: Took 0.000428 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.08.25-22.53.16:756][  0]LogSlate: Took 0.000281 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.08.25-22.53.16:886][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
-[2018.08.25-22.53.17:183][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.17:185][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.08.25-22.53.17:269][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.08.25-22.53.17:269][  0]LogLoad: (Engine Initialization) Total time: 9.83 seconds
-[2018.08.25-22.53.17:269][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.08.25-22.53.17:309][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.08.25-22.53.17:334][  0]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.08.25-22.53.17:349][  1]LogAssetRegistry: Asset discovery search completed in 5.8024 seconds
-[2018.08.25-22.53.17:351][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.08.25-22.53.17:351][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000072 seconds (updated 0 objects)
-[2018.08.25-22.53.19:955][145]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.21:324][226]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.22:762][311]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.23:018][325]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.23:196][335]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.24:439][409]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.26:462][521]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-22.53.30:367][749]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-22.53.30:432][753]LogSlate: Window 'Plugins' being destroyed
-[2018.08.25-22.53.30:438][753]LogSlate: Window 'Plugins' being destroyed
-[2018.08.25-22.53.30:438][753]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
-[2018.08.25-22.53.30:438][753]LogDirectoryWatcher: A directory notification for '../../../../../../Projects/Game Jams/BrackeysJam/Plugins/' was aborted.
-[2018.08.25-22.53.31:521][816]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.40:986][377]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.47:776][780]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.47:798][780]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.48:934][847]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.53.49:998][847]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2018.08.25-22.53.50:093][848]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.BrackeysJam
-[2018.08.25-22.53.50:093][848]LogTemp: CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-22.53.50:093][848]LogTemp: Initial Dir: D:\Programs\Epic Games\UE_4.20
-[2018.08.25-22.53.50:093][848]LogTemp: Env CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-22.53.50:093][848]LogTemp: BranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries
-[2018.08.25-22.53.50:093][848]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Zehx\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2018.08.25-22.54.22:602][208]SourceControl: fatal: /Script: '/Script' is outside repository
-[2018.08.25-22.54.49:052][777]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-22.54.49:058][777]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-22.54.52:766][995]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.55.01:501][269]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-22.55.12:376][898]SourceControl: Error: error: cannot pull with rebase: You have unstaged changes.
-[2018.08.25-22.55.12:376][898]SourceControl: Error: error: additionally, your index contains uncommitted changes.
-[2018.08.25-22.55.12:376][898]SourceControl: Error: error: please commit or stash them.
-[2018.08.25-22.55.12:382][898]LogContentBrowser: Syncing 1 path(s):
-[2018.08.25-22.55.52:057][167]LogFMOD: Sent studio message: studio.version
-[2018.08.25-22.55.52:058][167]LogFMOD: Received studio message: log(): Connected to FMOD Studio on 127.0.0.1:3663.
-
-[2018.08.25-22.55.52:059][167]LogFMOD: Received studio message: out(): Version 1.10.07, 64-bit, Build #95892
-
-
-[2018.08.25-22.55.52:059][167]LogFMOD: Received studio version: Version 1.10.07, 64-bit, Build #95892
-[2018.08.25-22.55.52:059][167]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.55.52:059][167]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.55.52:059][167]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.55.52:060][167]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.55.52:060][167]LogFMOD: Sent studio message: studio.project.workspace.builtBanksOutputDirectory
-[2018.08.25-22.55.52:060][167]LogFMOD: Received studio message: out(): ../
-
-
-[2018.08.25-22.55.54:110][167]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.56.03:792][167]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.56.05:184][167]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.56.57:497][752]LogFMOD: Sent studio message: studio.version
-[2018.08.25-22.56.57:499][752]LogFMOD: Received studio message: log(): Connected to FMOD Studio on 127.0.0.1:3663.
-
-[2018.08.25-22.56.57:499][752]LogFMOD: Received studio message: out(): Version 1.10.07, 64-bit, Build #95892
-
-
-[2018.08.25-22.56.57:499][752]LogFMOD: Received studio version: Version 1.10.07, 64-bit, Build #95892
-[2018.08.25-22.56.57:499][752]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.56.57:500][752]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.56.57:500][752]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.56.57:500][752]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.56.57:500][752]LogFMOD: Sent studio message: studio.project.workspace.builtBanksOutputDirectory
-[2018.08.25-22.56.57:501][752]LogFMOD: Received studio message: out(): ../
-
-
-[2018.08.25-22.56.59:772][752]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.57.00:893][752]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.57.07:013][104]LogFMOD: Sent studio message: studio.version
-[2018.08.25-22.57.07:014][104]LogFMOD: Received studio message: log(): Connected to FMOD Studio on 127.0.0.1:3663.
-
-[2018.08.25-22.57.07:014][104]LogFMOD: Received studio message: out(): Version 1.10.07, 64-bit, Build #95892
-
-
-[2018.08.25-22.57.07:014][104]LogFMOD: Received studio version: Version 1.10.07, 64-bit, Build #95892
-[2018.08.25-22.57.07:014][104]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.57.07:014][104]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.57.07:014][104]LogFMOD: Sent studio message: studio.project.filePath
-[2018.08.25-22.57.07:014][104]LogFMOD: Received studio message: out(): D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/BrackeyJam_FMOD.fspro
-
-
-[2018.08.25-22.57.07:014][104]LogFMOD: Sent studio message: studio.project.workspace.builtBanksOutputDirectory
-[2018.08.25-22.57.07:015][104]LogFMOD: Received studio message: out(): ../
-
-
-[2018.08.25-22.57.12:268][104]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.57.13:358][104]LogSlate: Window 'Message' being destroyed
-[2018.08.25-22.58.38:236][391]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-22.58.40:856][535]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-22.59.35:883][799]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-22.59.36:206][816]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-22.59.36:266][816]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-22.59.38:248][933]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-22.59.40:315][ 50]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-23.00.16:872][971]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-23.00.23:412][351]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-23.00.24:046][387]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-23.00.24:101][387]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.00.25:032][440]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-23.00.25:883][486]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-23.00.26:697][530]SourceControl: fatal: /Temp: '/Temp' is outside repository
-[2018.08.25-23.00.28:665][643]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.00.32:459][863]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.01.01:070][552]LogSlate: Window 'Select Path' being destroyed
-[2018.08.25-23.01.01:172][552]LogSlate: Took 0.000228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.08.25-23.01.01:178][552]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.01.01:186][552]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Developers/Zehx/FMOD/BGM_Blueprint.BGM_Blueprint
-[2018.08.25-23.01.01:776][552]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 116 classes and 0 folders.
-[2018.08.25-23.01.11:543][916]LogSlate: Took 0.000384 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2018.08.25-23.03.17:500][571]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.08.25-23.03.17:529][571]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Untitled_1_Auto14D1C5BD3400270804F5510AFDED42F7F.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
-[2018.08.25-23.03.17:532][571]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.069
-[2018.08.25-23.03.17:533][571]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.069
-[2018.08.25-23.03.17:538][571]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Developers/Zehx/FMOD/BGM_Blueprint] ([1] browsable assets)...
-[2018.08.25-23.03.17:538][571]OBJ SavePackage: Finished generating thumbnails for package [/Game/Developers/Zehx/FMOD/BGM_Blueprint]
-[2018.08.25-23.03.17:553][571]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_Blueprint_Auto1415367004D759CF394329AB3A2F76ECC.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Game/Developers/Zehx/FMOD/BGM_Blueprint_Auto1.uasset'
-[2018.08.25-23.03.17:554][571]LogFileHelpers: Auto-saving content packages took 0.018
-[2018.08.25-23.05.08:924][297]LogSlate: Took 0.000265 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.08.25-23.06.53:862][329]BlueprintLog: New page: Compile BGM_Blueprint
-[2018.08.25-23.06.55:621][401]LogTemp: Repeating last play command: Selected Viewport
-[2018.08.25-23.06.55:670][401]LogFMOD: Creating runtime Studio System
-[2018.08.25-23.06.55:673][401]LogFMOD: Default sample rate = 48000
-[2018.08.25-23.06.55:673][401]LogFMOD: System sample rate = 96000
-[2018.08.25-23.06.55:677][401]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-23.06.55:682][401]LogFMOD: Loading Banks
-[2018.08.25-23.06.55:721][401]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.08.25-23.06.55:734][401]PIE: New page: PIE session: Untitled_1 (Aug 25, 2018, 9:06:55 AM)
-[2018.08.25-23.06.55:734][401]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2018.08.25-23.06.55:736][401]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001910s)
-[2018.08.25-23.06.55:737][401]LogAIModule: Creating AISystem for world Untitled_1
-[2018.08.25-23.06.55:738][401]LogPlayLevel: PIE: World Init took: (0.001732s)
-[2018.08.25-23.06.55:738][401]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003934s)
-[2018.08.25-23.06.55:807][401]LogInit: XAudio2 using 'Aux 1-2 (MOTU MicroBook)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.08.25-23.06.55:813][401]LogInit: FAudioDevice initialized.
-[2018.08.25-23.06.55:856][401]LogLoad: Game class is 'GameModeBase'
-[2018.08.25-23.06.55:859][401]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2018.08.25-16.06.55
-[2018.08.25-23.06.55:860][401]LogWorld: Bringing up level for play took: 0.001730
-[2018.08.25-23.06.55:882][401]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 10 classes and 0 folders.
-[2018.08.25-23.06.55:883][401]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.04
-[2018.08.25-23.07.01:871][745]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-23.07.01:906][745]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.08.25-23.07.01:936][745]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-23.07.01:982][746]LogPlayLevel: Display: Destroying online subsystem :Context_3
-[2018.08.25-23.07.53:558][156]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.07.53:571][156]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Developers/Zehx/FMOD/BGM_Blueprint" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset" SILENT=true
-[2018.08.25-23.07.53:592][156]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_BlueprintF70E3DE84D2B57E9CB9D0D85F6863BD6.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset'
-[2018.08.25-23.09.00:848][378]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2018.08.25-23.09.00:951][379]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.BrackeysJam
-[2018.08.25-23.09.00:951][379]LogTemp: CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-23.09.00:951][379]LogTemp: Initial Dir: D:\Programs\Epic Games\UE_4.20
-[2018.08.25-23.09.00:951][379]LogTemp: Env CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-23.09.00:951][379]LogTemp: BranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries
-[2018.08.25-23.09.00:951][379]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Zehx\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2018.08.25-23.13.24:201][444]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.08.25-23.13.24:228][444]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Untitled_1_Auto212AFB1B0418FE1D62F8B9889599F0504.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
-[2018.08.25-23.13.24:233][444]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.064
-[2018.08.25-23.13.24:233][444]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.064
-[2018.08.25-23.15.30:357][886]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-23.15.30:375][886]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-23.16.30:589][425]BlueprintLog: New page: Compile BGM_Blueprint
-[2018.08.25-23.18.32:965][741]LogSlate: Window 'Message' being destroyed
-[2018.08.25-23.23.24:873][225]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.08.25-23.23.24:908][225]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Untitled_1_Auto328188DFF42318B3CB4E756A9649EA0C6.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Temp/Untitled_1_Auto3.umap'
-[2018.08.25-23.23.24:911][225]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.077
-[2018.08.25-23.23.24:911][225]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.077
-[2018.08.25-23.23.24:920][225]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Developers/Zehx/FMOD/BGM_Blueprint] ([1] browsable assets)...
-[2018.08.25-23.23.24:920][225]OBJ SavePackage: Finished generating thumbnails for package [/Game/Developers/Zehx/FMOD/BGM_Blueprint]
-[2018.08.25-23.23.24:953][225]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_Blueprint_Auto3CE40615E4040B7B8DD4964BB9273F37C.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Game/Developers/Zehx/FMOD/BGM_Blueprint_Auto3.uasset'
-[2018.08.25-23.23.24:953][225]LogFileHelpers: Auto-saving content packages took 0.035
-[2018.08.25-23.30.52:908][558]AssetReimport: New page: Outstanding source content changes 9:30:52 AM
-[2018.08.25-23.30.52:918][558]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.30.54:450][558]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_Climax" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Climax.uasset" SILENT=true
-[2018.08.25-23.30.54:466][558]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_ClimaxD52F735143F89C699EADF3A17081E222.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.30.56:528][558]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.30.56:630][559]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.30.57:555][559]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Lo-MedTr1261BEBF4316E9182109208AEC8EFD72.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.30.58:799][559]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.30.58:904][560]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.31.00:038][560]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_LowAction" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_LowAction.uasset" SILENT=true
-[2018.08.25-23.31.00:050][560]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_LowActioC2B090CF4FDB8B9FE638E593A59D300E.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.31.01:507][560]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.31.01:585][561]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.31.02:382][561]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_MainMenu" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MainMenu.uasset" SILENT=true
-[2018.08.25-23.31.02:392][561]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MainMenuE1A6E99F42639C6E320DE9A75FE50A29.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.31.03:586][561]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.31.03:657][562]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.31.04:946][562]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MediumAc6C2A4EF34E01BBC7D02FBAA482FCD64D.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.31.06:477][562]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.31.06:548][563]LogTemp: Couldn't find amount to resample to.
-[2018.08.25-23.31.07:580][563]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_RisingAc3FB8214A45F0AED3CF596289C7102890.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.31.08:971][563]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.31.09:190][564]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_Climax" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Climax.uasset" SILENT=true
-[2018.08.25-23.31.09:222][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_ClimaxDDEF1A654EBE945FA588C4A31D58612E.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.31.09:268][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Lo-MedTrA250DC8744017FDD42ABC99DA73FF494.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.31.09:279][564]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_LowAction" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_LowAction.uasset" SILENT=true
-[2018.08.25-23.31.09:298][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_LowActioBD11BE844E267EFA7FA72E84B22D4D99.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.31.09:304][564]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/BJ_audio_loop_MainTheme_MainMenu" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MainMenu.uasset" SILENT=true
-[2018.08.25-23.31.09:318][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MainMenu186C1A84446224A7A7BC0FA734FD8B50.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.31.09:347][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MediumAc95757F39414B6429ED8D439F2A279F64.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.31.09:372][564]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_RisingAc14342373487603F00B0950912D0E9700.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.31.12:397][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Climax to /Game/Audio/BJ_audio_loop_MainTheme_Climax.
-[2018.08.25-23.31.12:397][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Lo-MedTransition to /Game/Audio/BJ_audio_loop_MainTheme_Lo-MedTransition.
-[2018.08.25-23.31.12:398][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_LowAction to /Game/Audio/BJ_audio_loop_MainTheme_LowAction.
-[2018.08.25-23.31.12:398][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MainMenu to /Game/Audio/BJ_audio_loop_MainTheme_MainMenu.
-[2018.08.25-23.31.12:398][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MediumAction to /Game/Audio/BJ_audio_loop_MainTheme_MediumAction.
-[2018.08.25-23.31.12:398][721]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_RisingAction to /Game/Audio/BJ_audio_loop_MainTheme_RisingAction.
-[2018.08.25-23.33.27:897][789]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.037
-[2018.08.25-23.33.27:899][789]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Developers/Zehx/FMOD/BGM_Blueprint] ([1] browsable assets)...
-[2018.08.25-23.33.27:899][789]OBJ SavePackage: Finished generating thumbnails for package [/Game/Developers/Zehx/FMOD/BGM_Blueprint]
-[2018.08.25-23.33.27:928][789]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_Blueprint_Auto43091881F422B9F53DC6DB19F20413356.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Game/Developers/Zehx/FMOD/BGM_Blueprint_Auto4.uasset'
-[2018.08.25-23.33.27:929][789]LogFileHelpers: Auto-saving content packages took 0.031
-[2018.08.25-23.33.57:194][963]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Developers/Zehx/FMOD/BGM_Blueprint" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset" SILENT=true
-[2018.08.25-23.33.57:212][963]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_BlueprintB41603314AB8327E90FAE0A993B39982.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset'
-[2018.08.25-23.33.58:027][  6]BlueprintLog: New page: Compile BGM_Blueprint
-[2018.08.25-23.33.59:558][ 80]LogSlate: Window 'BGM_Blueprint' being destroyed
-[2018.08.25-23.33.59:568][ 80]LogSlate: Window 'BGM_Blueprint' being destroyed
-[2018.08.25-23.34.10:576][661]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2018.08.25-23.34.10:660][662]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.BrackeysJam
-[2018.08.25-23.34.10:660][662]LogTemp: CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-23.34.10:660][662]LogTemp: Initial Dir: D:\Programs\Epic Games\UE_4.20
-[2018.08.25-23.34.10:660][662]LogTemp: Env CWD: D:\Programs\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.08.25-23.34.10:660][662]LogTemp: BranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = ZEHX-LAPTOP/D/Programs/Epic Games/UE_4.20/Engine/Binaries
-[2018.08.25-23.34.10:706][663]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Zehx\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2018.08.25-23.34.46:931][786]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-23.34.46:935][786]LogSlate: Window 'Project Settings' being destroyed
-[2018.08.25-23.34.49:281][920]SourceControl: fatal: /Temp: '/Temp' is outside repository
-[2018.08.25-23.35.15:004][920]LogSlate: Window 'Save Level As' being destroyed
-[2018.08.25-23.35.15:196][920]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/0x01TestMapE512DA2447544CD9F5FDB8A26684CEAA.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/Maps/0x01TestMap.umap'
-[2018.08.25-23.35.15:613][920]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/0x01TestMap_BuiltDataA3D6B18D4870F6235116CEA21AA68837.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/Maps/0x01TestMap_BuiltData.uasset'
-[2018.08.25-23.35.15:948][920]LogFileHelpers: Saving map '0x01TestMap' took 0.935
-[2018.08.25-23.35.16:180][930]SourceControl: fatal: /Temp: '/Temp' is outside repository
-[2018.08.25-23.36.06:144][500]AssetReimport: New page: Outstanding source content changes 9:36:06 AM
-[2018.08.25-23.36.06:153][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_RisingAction.wav)
-[2018.08.25-23.36.06:185][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MediumAction.wav)
-[2018.08.25-23.36.06:215][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MainMenu.wav)
-[2018.08.25-23.36.06:233][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_LowAction.wav)
-[2018.08.25-23.36.06:255][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Lo-MedTransition.wav)
-[2018.08.25-23.36.06:283][500]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 D:/Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Climax.wav)
-[2018.08.25-23.36.06:638][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_RisingAc261EFCB0455D7BD9F6F622BC2E33E8CE.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.36.07:138][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MediumAc92260D444567A9A92EC74191185F73DD.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.36.07:728][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MainMenuF1A1D20A4591DCA933142CA649E23193.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.36.08:138][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_LowActio32C1D67C4EF844D6692731B62794A84C.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.36.08:639][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Lo-MedTrACBB1CBF44B77887AF611EA54A953354.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.36.09:058][501]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Climax41F6A83B42290EF0AA69B08D84835023.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.36.13:669][511]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MediumAc9AFBFDEB4129F73D20E07BB3905547C5.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.36.14:744][511]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.36.15:483][512]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_LowActio3B4CB09D4CF063BB8A4352877377CC55.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.36.16:467][512]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.36.17:151][513]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MainMenu521D7F244DBBE865683954ACE5AB8EB7.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.36.17:990][513]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.36.18:713][514]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Lo-MedTr2CD36223497C89AF99B9539DB128E5DF.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.36.19:590][514]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.36.20:391][515]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_RisingAcE0FFED4C46A5C8A5652CE3A489AAAB93.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.36.21:416][515]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.36.22:173][516]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Climax1FBA52C541274C19CFF294AE89A02BF8.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.36.23:471][516]SourceControl: rm 'Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.36.23:657][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MediumAc1AE37D8F4994E456696CB2A5DE5E0540.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MediumAction.uasset'
-[2018.08.25-23.36.23:684][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_LowActio69BEC6B74CD1B9CC02E2928F8484547A.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_LowAction.uasset'
-[2018.08.25-23.36.23:711][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_MainMenuB7FDCD9F48F15184029143A42D66B28E.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MainMenu.uasset'
-[2018.08.25-23.36.23:736][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_Lo-MedTr26B8740748DABB9B0718D69CF05E0A07.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Lo-MedTransition.uasset'
-[2018.08.25-23.36.23:764][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_RisingAc92D2042F4B58EFD0123B3CAB23298E28.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_RisingAction.uasset'
-[2018.08.25-23.36.23:803][517]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BJ_audio_loop_MainTheme_ClimaxC75FBA1042A33AA173DD158C680CBAD1.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Climax.uasset'
-[2018.08.25-23.36.24:516][521]LogFMOD: File has changed: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
-[2018.08.25-23.36.24:603][521]LogFMOD: Loading strings bank: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
-[2018.08.25-23.36.24:605][521]LogFMOD: Constructing asset: /Game/FMOD/Events/Music/BGM
-[2018.08.25-23.36.24:605][521]LogFMOD: Skipping asset: bus:/
-[2018.08.25-23.36.24:605][521]LogFMOD: Constructing asset: /Game/FMOD/Events/blank
-[2018.08.25-23.36.24:606][521]LogFMOD: Constructing asset: /Game/FMOD/Banks/Master_Bank
-[2018.08.25-23.36.24:606][521]LogFMOD: Constructing asset: /Game/FMOD/Buses/Reverb
-[2018.08.25-23.36.24:606][521]LogFMOD: Skipping asset: bank:/Master Bank.strings
-[2018.08.25-23.36.24:609][521]LogFMOD: Default sample rate = 48000
-[2018.08.25-23.36.24:609][521]LogFMOD: System sample rate = 96000
-[2018.08.25-23.36.24:614][521]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-23.36.24:755][521]LogFMOD: Default sample rate = 48000
-[2018.08.25-23.36.24:755][521]LogFMOD: System sample rate = 96000
-[2018.08.25-23.36.24:760][521]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_RisingAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MediumAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MainMenu.
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_LowAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Lo-MedTransition.
-[2018.08.25-23.36.26:817][597]AssetReimport: Importing new asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Climax.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MediumAction to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MediumAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_LowAction to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_LowAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_MainMenu to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_MainMenu.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Lo-MedTransition to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Lo-MedTransition.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_RisingAction to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_RisingAction.
-[2018.08.25-23.36.26:817][597]AssetReimport: Moving asset /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BJ_audio_loop_MainTheme_Climax to /Game/Audio/FMOD/BrackeyJam_FMOD/Assets/BGM/BJ_audio_loop_MainTheme_Climax.
-[2018.08.25-23.42.14:398][429]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.42.14:526][437]LogEditorViewport: Clicking on Component (LMB): SceneComponent (DefaultSceneRoot1)
-[2018.08.25-23.42.15:034][466]LogEditorViewport: Clicking on Component (context menu): SceneComponent (DefaultSceneRoot1)
-[2018.08.25-23.42.15:114][466]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.42.17:390][600]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.08.25-23.42.18:035][636]LogEditorViewport: Clicking on Actor (LMB): BGM_Blueprint_C (BGM_Blueprint)
-[2018.08.25-23.42.18:517][661]LogEditorViewport: Clicking on Actor (context menu): BGM_Blueprint_C (BGM_Blueprint)
-[2018.08.25-23.42.18:549][661]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.42.19:953][743]LogSlate: FSceneViewport::OnFocusLost() reason 5
-[2018.08.25-23.42.19:971][743]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Developers/Zehx/FMOD/BGM_Blueprint.BGM_Blueprint
-[2018.08.25-23.42.32:196][302]BlueprintLog: New page: Compile BGM_Blueprint
-[2018.08.25-23.42.34:189][358]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.08.25-23.42.34:201][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Developers/Zehx/FMOD/BGM_Blueprint" FILE="../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset" SILENT=true
-[2018.08.25-23.42.34:231][358]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/BGM_BlueprintF8E8AA2C48014A091504B7801E09E545.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/FMOD/BGM_Blueprint.uasset'
-[2018.08.25-23.42.35:252][407]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-23.42.36:289][466]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.08.25-23.42.36:357][470]LogTemp: Repeating last play command: Selected Viewport
-[2018.08.25-23.42.36:412][470]LogFMOD: Creating runtime Studio System
-[2018.08.25-23.42.36:421][470]LogFMOD: Default sample rate = 48000
-[2018.08.25-23.42.36:421][470]LogFMOD: System sample rate = 96000
-[2018.08.25-23.42.36:435][470]LogFMOD: Warning: c:\jk\workspace\1.10_UE4.20_Win64\lowlevel_api\src\fmod_systemi.cpp(2822) - Output requires a sample rate of 96000Hz, resampling will occur.
-
-[2018.08.25-23.42.36:444][470]LogFMOD: Loading Banks
-[2018.08.25-23.42.36:482][470]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.08.25-23.42.36:482][470]PIE: New page: PIE session: 0x01TestMap (Aug 25, 2018, 9:42:36 AM)
-[2018.08.25-23.42.36:482][470]LogPlayLevel: Creating play world package: /Game/Developers/Zehx/Maps/UEDPIE_0_0x01TestMap
-[2018.08.25-23.42.36:484][470]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002629s)
-[2018.08.25-23.42.36:486][470]LogAIModule: Creating AISystem for world 0x01TestMap
-[2018.08.25-23.42.36:486][470]LogPlayLevel: PIE: World Init took: (0.001373s)
-[2018.08.25-23.42.36:486][470]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Developers/Zehx/Maps/0x01TestMap.0x01TestMap to /Game/Developers/Zehx/Maps/UEDPIE_0_0x01TestMap.0x01TestMap (0.004153s)
-[2018.08.25-23.42.36:559][470]LogInit: XAudio2 using 'Aux 1-2 (MOTU MicroBook)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.08.25-23.42.36:567][470]LogInit: FAudioDevice initialized.
-[2018.08.25-23.42.36:598][470]LogLoad: Game class is 'GameModeBase'
-[2018.08.25-23.42.36:599][470]LogWorld: Bringing World /Game/Developers/Zehx/Maps/UEDPIE_0_0x01TestMap.0x01TestMap up for play (max tick rate 60) at 2018.08.25-16.42.36
-[2018.08.25-23.42.36:599][470]LogWorld: Bringing up level for play took: 0.000753
-[2018.08.25-23.42.36:613][470]PIE: Play in editor start time for /Game/Developers/Zehx/Maps/UEDPIE_0_0x01TestMap 0.77
-[2018.08.25-23.42.42:684][816]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-23.42.42:732][816]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.08.25-23.42.42:765][816]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.08.25-23.42.42:782][817]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2018.08.25-23.44.58:026][380]LogSavePackage: Moving '../../../../../../Projects/Game Jams/BrackeysJam/Saved/0x01TestMap_Auto5B9F6ACFC4109C9CDCCC1F29E1C5A4F81.tmp' to '../../../../../../Projects/Game Jams/BrackeysJam/Saved/Autosaves/Game/Developers/Zehx/Maps/0x01TestMap_Auto5.umap'
-[2018.08.25-23.44.58:032][380]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Developers/Zehx/Maps/0x01TestMap' took 0.078
-[2018.08.25-23.44.58:032][380]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.078
-[2018.08.25-23.45.27:891][470]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.08.26-22.18.12:863][  0]LogInit: Selected Device Profile: [Windows]
+[2018.08.26-22.18.12:863][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.08.26-22.18.12:948][  0]LogHAL: Display: Platform has ~ 16 GB [17059098624 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.08.26-22.18.12:948][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.08.26-22.18.12:948][  0]LogInit: Going up to parent DeviceProfile []
+[2018.08.26-22.18.12:948][  0]LogInit: Computer: ZEHX-LAPTOP
+[2018.08.26-22.18.12:948][  0]LogInit: User: Zehx
+[2018.08.26-22.18.12:948][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.08.26-22.18.12:948][  0]LogInit: High frequency timer resolution =2.742192 MHz
+[2018.08.26-22.18.12:948][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.08.26-22.18.12:948][  0]LogMemory: Platform Memory Stats for Windows
+[2018.08.26-22.18.12:948][  0]LogMemory: Process Physical Memory: 100.07 MB used, 100.07 MB peak
+[2018.08.26-22.18.12:948][  0]LogMemory: Process Virtual Memory: 91.04 MB used, 91.04 MB peak
+[2018.08.26-22.18.12:948][  0]LogMemory: Physical Memory: 6209.14 MB used,  10059.68 MB free, 16268.82 MB total
+[2018.08.26-22.18.12:948][  0]LogMemory: Virtual Memory: 4641.19 MB used,  10059.68 MB free, 134217728.00 MB total
+[2018.08.26-22.18.12:969][  0]LogInit: Using OS detected language (en-US).
+[2018.08.26-22.18.12:969][  0]LogInit: Using OS detected locale (en-CA).
+[2018.08.26-22.18.12:970][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.08.26-22.18.13:417][  0]LogStreaming: Display: Took  0.447s to InitEngineTextLocalization.
+[2018.08.26-22.18.13:417][  0]LogInit: Setting process to per monitor DPI aware
+[2018.08.26-22.18.13:480][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.08.26-22.18.13:480][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.08.26-22.18.13:697][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.08.26-22.18.13:697][  0]LogD3D11RHI: D3D11 adapters:
+[2018.08.26-22.18.13:756][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2018.08.26-22.18.13:756][  0]LogD3D11RHI:       4053/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.08.26-22.18.13:767][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2018.08.26-22.18.13:767][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.08.26-22.18.13:770][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.08.26-22.18.13:770][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.08.26-22.18.13:770][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.08.26-22.18.13:797][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.08.26-22.18.13:797][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8c (for the marketing name, search the web for "GPU Device Id")
+[2018.08.26-22.18.13:797][  0]LogWindows: EnumDisplayDevices:
+[2018.08.26-22.18.13:797][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:0 D:1)
+[2018.08.26-22.18.13:797][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2018.08.26-22.18.13:798][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2018.08.26-22.18.13:798][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.08.26-22.18.13:798][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2018.08.26-22.18.13:798][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.08.26-22.18.13:798][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.08.26-22.18.13:798][  0]LogRHI: Texture pool is 2837 MB (70% of 4053 MB)
+[2018.08.26-22.18.13:829][  0]LogD3D11RHI: Async texture creation enabled
+[2018.08.26-22.18.13:847][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.08.26-22.18.13:849][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Projects/Game Jams/BrackeysJam/Intermediate/Shaders/WorkingDirectory/13816/).
+[2018.08.26-22.18.13:849][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Zehx/AppData/Local/Temp/UnrealShaderWorkingDir/A23BAAD04A26701ECE7FBEB4028AA4FA/'.
+[2018.08.26-22.18.14:177][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.08.26-22.18.14:189][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.08.26-22.18.14:204][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.08.26-22.18.14:218][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.08.26-22.18.14:232][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.08.26-22.18.14:249][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.08.26-22.18.14:263][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.08.26-22.18.14:278][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.08.26-22.18.14:283][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.08.26-22.18.14:368][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:368][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:368][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:368][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:368][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:369][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.08.26-22.18.14:371][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.08.26-22.18.14:432][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.08.26-22.18.14:432][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.08.26-22.18.14:457][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.08.26-22.18.14:457][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.08.26-22.18.14:472][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.08.26-22.18.14:485][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.08.26-22.18.14:499][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.08.26-22.18.14:515][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.08.26-22.18.14:525][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.08.26-22.18.14:525][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.08.26-22.18.14:581][  0]LogXGEController: Cleaning working directory: C:/Users/Zehx/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.08.26-22.18.14:581][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.08.26-22.18.14:581][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.08.26-22.18.14:581][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.08.26-22.18.15:646][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.08.26-22.18.15:734][  0]LogDerivedDataCache: Loaded boot cache 0.09s 73MB C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.08.26-22.18.15:735][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.08.26-22.18.15:735][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Projects/Game Jams/BrackeysJam/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.08.26-22.18.15:735][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.08.26-22.18.15:735][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Projects/Game Jams/BrackeysJam/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.08.26-22.18.15:735][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.08.26-22.18.15:751][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.08.26-22.18.15:763][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Zehx/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.08.26-22.18.15:763][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.08.26-22.18.15:763][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.08.26-22.18.15:783][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.08.26-22.18.15:785][  0]LogSlate: Using FreeType 2.6.0
+[2018.08.26-22.18.15:785][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.08.26-22.18.15:868][  0]LogAssetRegistry: FAssetRegistry took 0.0268 seconds to start up
+[2018.08.26-22.18.16:248][  0]LogInit: Selected Device Profile: [Windows]
+[2018.08.26-22.18.16:457][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.08.26-22.18.16:464][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.08.26-22.18.16:464][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.08.26-22.18.16:464][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.08.26-22.18.16:464][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.08.26-22.18.16:492][  0]LogNetVersion: BrackeysJam 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 269005526)
+[2018.08.26-22.18.17:566][  0]LogPackageLocalizationCache: Processed 14 localized package path(s) for 2 prioritized culture(s) in 0.413760 seconds
+[2018.08.26-22.18.17:574][  0]LogUObjectArray: 38438 objects as part of root set at end of initial load.
+[2018.08.26-22.18.17:574][  0]LogUObjectAllocator: 6693856 out of 0 bytes used by permanent object pool.
+[2018.08.26-22.18.17:574][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.08.26-22.18.19:309][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.08.26-22.18.19:323][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.08.26-22.18.19:561][  0]LogFMOD: FFMODStudioModule startup
+[2018.08.26-22.18.19:561][  0]LogFMOD:  Lib path = '../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries'
+[2018.08.26-22.18.19:561][  0]LogFMOD: FFMODStudioModule::LoadDll: Loading ../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries/Win64/fmodL64.dll
+[2018.08.26-22.18.19:641][  0]LogFMOD: FFMODStudioModule::LoadDll: Loading ../../../../../../Projects/Game Jams/BrackeysJam/Plugins/FMODStudio/Binaries/Win64/fmodstudioL64.dll
+[2018.08.26-22.18.19:866][  0]LogFMOD: Loading strings bank: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
+[2018.08.26-22.18.19:922][  0]LogFMOD: Constructing asset: /Game/FMOD/Events/Music/BGM
+[2018.08.26-22.18.19:922][  0]LogFMOD: Skipping asset: bus:/
+[2018.08.26-22.18.19:922][  0]LogFMOD: Constructing asset: /Game/FMOD/Events/blank
+[2018.08.26-22.18.19:922][  0]LogFMOD: Constructing asset: /Game/FMOD/Banks/Master_Bank
+[2018.08.26-22.18.19:922][  0]LogFMOD: Constructing asset: /Game/FMOD/Buses/Reverb
+[2018.08.26-22.18.19:922][  0]LogFMOD: Skipping asset: bank:/Master Bank.strings
+[2018.08.26-22.18.19:926][  0]LogFMOD: Default sample rate = 48000
+[2018.08.26-22.18.19:926][  0]LogFMOD: System sample rate = 48000
+[2018.08.26-22.18.19:926][  0]LogFMOD: Matching system sample rate 48000
+[2018.08.26-22.18.20:013][  0]LogFMOD: Default sample rate = 48000
+[2018.08.26-22.18.20:013][  0]LogFMOD: System sample rate = 48000
+[2018.08.26-22.18.20:013][  0]LogFMOD: Matching system sample rate 48000
+[2018.08.26-22.18.20:144][  0]SourceControl: Source control is disabled
+[2018.08.26-22.18.21:991][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.08.26-22.18.22:088][  0]LogOcInput: OculusInput pre-init called
+[2018.08.26-22.18.22:134][  0]LogFMOD: FFMODStudioEditorModule startup
+[2018.08.26-22.18.22:210][  0]LogEngine: Initializing Engine...
+[2018.08.26-22.18.22:210][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.08.26-22.18.22:211][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.08.26-22.18.22:211][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.08.26-22.18.22:211][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.08.26-22.18.22:211][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.08.26-22.18.22:314][  0]LogMaterial: Display: Missing cached shader map for material LevelColorationUnlitMaterial, compiling. Is special engine material.
+[2018.08.26-22.18.22:530][  0]LogShaderCompilers: Display: Shaders left to compile 249
+[2018.08.26-22.18.22:530][  0]LogShaderCompilers: Display: Shaders left to compile 239
+[2018.08.26-22.18.22:530][  0]LogShaderCompilers: Display: Shaders left to compile 229
+[2018.08.26-22.18.22:530][  0]LogShaderCompilers: Display: Shaders left to compile 219
+[2018.08.26-22.18.22:530][  0]LogShaderCompilers: Display: Shaders left to compile 209
+[2018.08.26-22.18.22:530][  0]LogMaterial: Display: Missing cached shader map for material MAT_LevelColorationLitLightmapUV, compiling. Is special engine material.
+[2018.08.26-22.18.22:981][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationLitMaterial, compiling. Is special engine material.
+[2018.08.26-22.18.23:380][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationUnlitMateri, compiling. Is special engine material.
+[2018.08.26-22.18.23:677][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.08.26-22.18.23:694][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.08.26-22.18.23:820][  0]LogInit: XAudio2 using 'Laptop (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.08.26-22.18.23:880][  0]LogInit: FAudioDevice initialized.
+[2018.08.26-22.18.23:881][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.08.26-22.18.24:025][  0]LogDerivedDataCache: Saved boot cache 0.14s 75MB C:/Users/Zehx/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.08.26-22.18.24:033][  0]LogInit: Texture streaming: Enabled
+[2018.08.26-22.18.24:065][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.08.26-22.18.24:099][  0]LogInit: Transaction tracking system initialized
+[2018.08.26-22.18.24:131][  0]BlueprintLog: New page: Editor Load
+[2018.08.26-22.18.24:249][  0]LocalizationService: Localization service is disabled
+[2018.08.26-22.18.24:871][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.08.26-22.18.24:872][  0]LogCook: Display: Mobile HDR setting 1
+[2018.08.26-22.18.24:872][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.08.26-22.18.24:872][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.08.26-22.18.24:872][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.08.26-22.18.24:872][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.08.26-22.18.24:872][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.08.26-22.18.25:102][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/' took 0.09s
+[2018.08.26-22.18.25:102][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.08.26-22.18.25:156][  0]LightingResults: New page: Lighting Build
+[2018.08.26-22.18.25:159][  0]MapCheck: New page: Map Check
+[2018.08.26-22.18.25:160][  0]LightingResults: New page: Lighting Build
+[2018.08.26-22.18.25:704][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.08.26-22.18.25:722][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.08.26-22.18.25:759][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.08.26-22.18.25:836][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 76.189ms to complete.
+[2018.08.26-22.18.25:836][  0]LogFileHelpers: Loading map 'Template_Default' took 0.735
+[2018.08.26-22.18.25:995][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.26-22.18.26:007][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.26-22.18.26:024][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.26-22.18.26:039][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.08.26-22.18.26:046][  0]LogCollectionManager: Loaded 0 collections in 0.001374 seconds
+[2018.08.26-22.18.26:101][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Saved/Collections/' took 0.01s
+[2018.08.26-22.18.26:101][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/Developers/Zehx/Collections/' took 0.01s
+[2018.08.26-22.18.26:101][  0]LogFileCache: Scanning file cache for directory 'D:/Projects/Game Jams/BrackeysJam/Content/Collections/' took 0.01s
+[2018.08.26-22.18.26:101][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.08.26-22.18.26:120][  0]LogContentBrowser: Native class hierarchy populated in 0.0185 seconds. Added 2702 classes and 626 folders.
+[2018.08.26-22.18.26:129][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.08.26-22.18.26:201][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.08.26-22.18.26:213][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2018.08.26-22.18.26:418][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.08.26-22.18.26:418][  0]LogLoad: (Engine Initialization) Total time: 15.97 seconds
+[2018.08.26-22.18.26:418][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.08.26-22.18.26:540][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.08.26-22.18.26:544][  0]LogSlate: Took 0.000455 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.08.26-22.18.26:546][  0]LogSlate: Took 0.000452 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.08.26-22.18.26:555][  0]LogSlate: Took 0.000556 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.08.26-22.18.26:882][  0]LogRenderer: Reallocating scene render targets to support 804x360 Format 10 NumSamples 1 (Frame:1).
+[2018.08.26-22.18.26:882][  0]LogSlate: Took 0.000309 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.08.26-22.18.27:399][  1]LogShaderCompilers: Display: Shaders left to compile 2208
+[2018.08.26-22.18.27:399][  1]LogFMOD: File has changed: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
+[2018.08.26-22.18.27:535][  1]LogFMOD: Loading strings bank: ../../../../../../Projects/Game Jams/BrackeysJam/Content/FMOD/Desktop/Master Bank.strings.bank
+[2018.08.26-22.18.27:537][  1]LogFMOD: Skipping asset: bus:/
+[2018.08.26-22.18.27:537][  1]LogFMOD: Skipping asset: bank:/Master Bank.strings
+[2018.08.26-22.18.27:541][  1]LogFMOD: Default sample rate = 48000
+[2018.08.26-22.18.27:541][  1]LogFMOD: System sample rate = 48000
+[2018.08.26-22.18.27:542][  1]LogFMOD: Matching system sample rate 48000
+[2018.08.26-22.18.27:878][  1]LogFMOD: Default sample rate = 48000
+[2018.08.26-22.18.27:878][  1]LogFMOD: System sample rate = 48000
+[2018.08.26-22.18.27:878][  1]LogFMOD: Matching system sample rate 48000
+[2018.08.26-22.18.28:006][  1]LogShaderCompilers: Display: Shaders left to compile 2198
+[2018.08.26-22.18.28:187][  2]LogAssetRegistry: Asset discovery search completed in 12.3419 seconds
+[2018.08.26-22.18.28:216][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.08.26-22.18.28:216][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000104 seconds (updated 0 objects)
+[2018.08.26-22.18.28:770][ 21]LogShaderCompilers: Display: Shaders left to compile 2188
+[2018.08.26-22.18.29:550][ 54]LogShaderCompilers: Display: Shaders left to compile 2178
+[2018.08.26-22.18.32:020][161]LogShaderCompilers: Display: Shaders left to compile 2168
+[2018.08.26-22.18.32:938][199]LogShaderCompilers: Display: Shaders left to compile 2158
+[2018.08.26-22.18.33:065][205]LogShaderCompilers: Display: Shaders left to compile 2148
+[2018.08.26-22.18.33:610][228]LogShaderCompilers: Display: Shaders left to compile 2138
+[2018.08.26-22.18.35:444][310]LogShaderCompilers: Display: Shaders left to compile 2128
+[2018.08.26-22.18.36:913][373]LogShaderCompilers: Display: Shaders left to compile 2118
+[2018.08.26-22.18.38:081][425]LogShaderCompilers: Display: Shaders left to compile 2108
+[2018.08.26-22.18.39:527][488]LogShaderCompilers: Display: Shaders left to compile 2098
+[2018.08.26-22.18.42:048][588]LogShaderCompilers: Display: Shaders left to compile 2088
+[2018.08.26-22.18.42:166][593]LogShaderCompilers: Display: Shaders left to compile 2078
+[2018.08.26-22.18.43:080][632]LogShaderCompilers: Display: Shaders left to compile 2068
+[2018.08.26-22.18.44:281][686]LogShaderCompilers: Display: Shaders left to compile 2058
+[2018.08.26-22.18.46:245][775]LogShaderCompilers: Display: Shaders left to compile 2048
+[2018.08.26-22.18.46:262][776]LogShaderCompilers: Display: Shaders left to compile 2038
+[2018.08.26-22.18.47:115][806]LogShaderCompilers: Display: Shaders left to compile 2028
+[2018.08.26-22.18.47:702][829]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.08.26-22.18.49:633][931]LogShaderCompilers: Display: Shaders left to compile 2018
+[2018.08.26-22.18.50:644][982]LogShaderCompilers: Display: Shaders left to compile 2008
+[2018.08.26-22.18.51:357][ 18]LogShaderCompilers: Display: Shaders left to compile 1998
+[2018.08.26-22.18.54:317][130]LogShaderCompilers: Display: Shaders left to compile 1988
+[2018.08.26-22.18.56:213][188]LogShaderCompilers: Display: Shaders left to compile 1978
+[2018.08.26-22.18.58:244][255]LogShaderCompilers: Display: Shaders left to compile 1968
+[2018.08.26-22.19.03:020][400]LogShaderCompilers: Display: Shaders left to compile 1958
+[2018.08.26-22.19.04:150][441]LogShaderCompilers: Display: Shaders left to compile 1948
+[2018.08.26-22.19.06:705][539]LogShaderCompilers: Display: Shaders left to compile 1938
+[2018.08.26-22.19.07:639][570]LogShaderCompilers: Display: Shaders left to compile 1928
+[2018.08.26-22.19.08:154][583]LogShaderCompilers: Display: Shaders left to compile 1918
+[2018.08.26-22.19.15:896][780]LogShaderCompilers: Display: Shaders left to compile 1908
+[2018.08.26-22.19.16:183][792]LogShaderCompilers: Display: Shaders left to compile 1898
+[2018.08.26-22.19.17:300][836]LogShaderCompilers: Display: Shaders left to compile 1888
+[2018.08.26-22.19.17:966][864]LogShaderCompilers: Display: Shaders left to compile 1878
+[2018.08.26-22.19.20:607][969]LogShaderCompilers: Display: Shaders left to compile 1868
+[2018.08.26-22.19.21:995][ 18]LogShaderCompilers: Display: Shaders left to compile 1858
+[2018.08.26-22.19.24:351][ 73]LogShaderCompilers: Display: Shaders left to compile 1848
+[2018.08.26-22.19.28:196][202]LogShaderCompilers: Display: Shaders left to compile 1838
+[2018.08.26-22.19.28:221][203]LogShaderCompilers: Display: Shaders left to compile 1828
+[2018.08.26-22.19.30:688][307]LogShaderCompilers: Display: Shaders left to compile 1818
+[2018.08.26-22.19.30:799][311]LogShaderCompilers: Display: Shaders left to compile 1808
+[2018.08.26-22.19.34:927][479]LogShaderCompilers: Display: Shaders left to compile 1798
+[2018.08.26-22.19.35:152][489]LogShaderCompilers: Display: Shaders left to compile 1788
+[2018.08.26-22.19.36:018][527]LogShaderCompilers: Display: Shaders left to compile 1778
+[2018.08.26-22.19.36:170][534]LogShaderCompilers: Display: Shaders left to compile 1768
+[2018.08.26-22.19.39:804][678]LogShaderCompilers: Display: Shaders left to compile 1758
+[2018.08.26-22.19.40:282][698]LogShaderCompilers: Display: Shaders left to compile 1748
+[2018.08.26-22.19.43:259][790]LogShaderCompilers: Display: Shaders left to compile 1738
+[2018.08.26-22.19.44:375][826]LogShaderCompilers: Display: Shaders left to compile 1728
+[2018.08.26-22.19.47:524][940]LogShaderCompilers: Display: Shaders left to compile 1718
+[2018.08.26-22.19.47:895][953]LogShaderCompilers: Display: Shaders left to compile 1708
+[2018.08.26-22.19.49:710][ 24]LogShaderCompilers: Display: Shaders left to compile 1698
+[2018.08.26-22.19.49:849][ 30]LogShaderCompilers: Display: Shaders left to compile 1688
+[2018.08.26-22.19.52:515][133]LogShaderCompilers: Display: Shaders left to compile 1678
+[2018.08.26-22.19.53:135][156]LogShaderCompilers: Display: Shaders left to compile 1668
+[2018.08.26-22.19.54:005][186]LogShaderCompilers: Display: Shaders left to compile 1658
+[2018.08.26-22.19.56:188][268]LogShaderCompilers: Display: Shaders left to compile 1648
+[2018.08.26-22.19.56:518][279]LogShaderCompilers: Display: Shaders left to compile 1638
+[2018.08.26-22.20.00:557][436]LogShaderCompilers: Display: Shaders left to compile 1628
+[2018.08.26-22.20.01:105][460]LogShaderCompilers: Display: Shaders left to compile 1618
+[2018.08.26-22.20.01:999][491]LogShaderCompilers: Display: Shaders left to compile 1608
+[2018.08.26-22.20.03:331][535]LogShaderCompilers: Display: Shaders left to compile 1598
+[2018.08.26-22.20.06:364][628]LogShaderCompilers: Display: Shaders left to compile 1588
+[2018.08.26-22.20.07:107][658]LogShaderCompilers: Display: Shaders left to compile 1578
+[2018.08.26-22.20.11:473][839]LogShaderCompilers: Display: Shaders left to compile 1568
+[2018.08.26-22.20.12:042][863]LogShaderCompilers: Display: Shaders left to compile 1558
+[2018.08.26-22.20.12:243][872]LogShaderCompilers: Display: Shaders left to compile 1548
+[2018.08.26-22.20.13:005][903]LogShaderCompilers: Display: Shaders left to compile 1538
+[2018.08.26-22.20.17:514][ 83]LogShaderCompilers: Display: Shaders left to compile 1528
+[2018.08.26-22.20.18:368][112]LogShaderCompilers: Display: Shaders left to compile 1518
+[2018.08.26-22.20.19:981][163]LogShaderCompilers: Display: Shaders left to compile 1508
+[2018.08.26-22.20.22:159][248]LogShaderCompilers: Display: Shaders left to compile 1498
+[2018.08.26-22.20.24:363][339]LogShaderCompilers: Display: Shaders left to compile 1488
+[2018.08.26-22.20.25:750][397]LogShaderCompilers: Display: Shaders left to compile 1478
+[2018.08.26-22.20.27:024][444]LogShaderCompilers: Display: Shaders left to compile 1468
+[2018.08.26-22.20.30:399][580]LogShaderCompilers: Display: Shaders left to compile 1458
+[2018.08.26-22.20.31:823][659]LogShaderCompilers: Display: Shaders left to compile 1448
+[2018.08.26-22.20.32:038][670]LogShaderCompilers: Display: Shaders left to compile 1438
+[2018.08.26-22.20.35:237][789]LogShaderCompilers: Display: Shaders left to compile 1428
+[2018.08.26-22.20.35:340][793]LogShaderCompilers: Display: Shaders left to compile 1418
+[2018.08.26-22.20.39:080][929]LogShaderCompilers: Display: Shaders left to compile 1408
+[2018.08.26-22.20.39:194][934]LogShaderCompilers: Display: Shaders left to compile 1398
+[2018.08.26-22.20.39:240][936]LogShaderCompilers: Display: Shaders left to compile 1388
+[2018.08.26-22.20.39:465][945]LogShaderCompilers: Display: Shaders left to compile 1378
+[2018.08.26-22.20.44:487][ 84]LogShaderCompilers: Display: Shaders left to compile 1368
+[2018.08.26-22.20.45:571][126]LogShaderCompilers: Display: Shaders left to compile 1358
+[2018.08.26-22.20.46:220][153]LogShaderCompilers: Display: Shaders left to compile 1348
+[2018.08.26-22.20.48:003][229]LogShaderCompilers: Display: Shaders left to compile 1338
+[2018.08.26-22.20.48:736][260]LogShaderCompilers: Display: Shaders left to compile 1328
+[2018.08.26-22.20.49:038][273]LogShaderCompilers: Display: Shaders left to compile 1318
+[2018.08.26-22.20.51:039][356]LogShaderCompilers: Display: Shaders left to compile 1308
+[2018.08.26-22.20.51:389][369]LogShaderCompilers: Display: Shaders left to compile 1298
+[2018.08.26-22.20.53:831][464]LogShaderCompilers: Display: Shaders left to compile 1288
+[2018.08.26-22.20.54:801][507]LogShaderCompilers: Display: Shaders left to compile 1278
+[2018.08.26-22.20.55:527][536]LogShaderCompilers: Display: Shaders left to compile 1268
+[2018.08.26-22.20.56:138][561]LogShaderCompilers: Display: Shaders left to compile 1258
+[2018.08.26-22.20.57:827][625]LogShaderCompilers: Display: Shaders left to compile 1248
+[2018.08.26-22.21.02:933][785]LogShaderCompilers: Display: Shaders left to compile 1238
+[2018.08.26-22.21.02:982][787]LogShaderCompilers: Display: Shaders left to compile 1228
+[2018.08.26-22.21.03:362][803]LogShaderCompilers: Display: Shaders left to compile 1218
+[2018.08.26-22.21.04:975][868]LogShaderCompilers: Display: Shaders left to compile 1208
+[2018.08.26-22.21.07:532][954]LogShaderCompilers: Display: Shaders left to compile 1198
+[2018.08.26-22.21.08:282][983]LogShaderCompilers: Display: Shaders left to compile 1188
+[2018.08.26-22.21.11:782][106]LogShaderCompilers: Display: Shaders left to compile 1178
+[2018.08.26-22.21.12:467][127]LogShaderCompilers: Display: Shaders left to compile 1168
+[2018.08.26-22.21.13:380][159]LogShaderCompilers: Display: Shaders left to compile 1158
+[2018.08.26-22.21.15:123][223]LogShaderCompilers: Display: Shaders left to compile 1148
+[2018.08.26-22.21.16:766][279]LogShaderCompilers: Display: Shaders left to compile 1138
+[2018.08.26-22.21.20:201][407]LogShaderCompilers: Display: Shaders left to compile 1128
+[2018.08.26-22.21.21:627][457]LogShaderCompilers: Display: Shaders left to compile 1118
+[2018.08.26-22.21.22:214][476]LogShaderCompilers: Display: Shaders left to compile 1108
+[2018.08.26-22.21.23:362][510]LogShaderCompilers: Display: Shaders left to compile 1098
+[2018.08.26-22.21.26:311][602]LogShaderCompilers: Display: Shaders left to compile 1088
+[2018.08.26-22.21.30:282][735]LogShaderCompilers: Display: Shaders left to compile 1078
+[2018.08.26-22.21.30:480][742]LogShaderCompilers: Display: Shaders left to compile 1068
+[2018.08.26-22.21.32:088][804]LogShaderCompilers: Display: Shaders left to compile 1058
+[2018.08.26-22.21.32:135][806]LogShaderCompilers: Display: Shaders left to compile 1048
+[2018.08.26-22.21.34:767][877]LogShaderCompilers: Display: Shaders left to compile 1038
+[2018.08.26-22.21.39:088][ 10]LogShaderCompilers: Display: Shaders left to compile 1028
+[2018.08.26-22.21.40:117][ 39]LogShaderCompilers: Display: Shaders left to compile 1018
+[2018.08.26-22.21.40:475][ 47]LogShaderCompilers: Display: Shaders left to compile 1008
+[2018.08.26-22.21.44:365][163]LogShaderCompilers: Display: Shaders left to compile 998
+[2018.08.26-22.21.44:920][185]LogShaderCompilers: Display: Shaders left to compile 988
+[2018.08.26-22.21.46:811][254]LogShaderCompilers: Display: Shaders left to compile 978
+[2018.08.26-22.21.50:051][357]LogShaderCompilers: Display: Shaders left to compile 968
+[2018.08.26-22.21.52:320][415]LogShaderCompilers: Display: Shaders left to compile 958
+[2018.08.26-22.21.52:355][416]LogShaderCompilers: Display: Shaders left to compile 948
+[2018.08.26-22.21.54:800][488]LogShaderCompilers: Display: Shaders left to compile 938
+[2018.08.26-22.21.57:152][541]LogShaderCompilers: Display: Shaders left to compile 928
+[2018.08.26-22.22.01:100][643]LogShaderCompilers: Display: Shaders left to compile 918
+[2018.08.26-22.22.02:056][675]LogShaderCompilers: Display: Shaders left to compile 908
+[2018.08.26-22.22.03:044][707]LogShaderCompilers: Display: Shaders left to compile 898
+[2018.08.26-22.22.04:385][754]LogShaderCompilers: Display: Shaders left to compile 888
+[2018.08.26-22.22.06:887][844]LogShaderCompilers: Display: Shaders left to compile 878
+[2018.08.26-22.22.08:569][902]LogShaderCompilers: Display: Shaders left to compile 868
+[2018.08.26-22.22.09:528][940]LogShaderCompilers: Display: Shaders left to compile 858
+[2018.08.26-22.22.09:607][943]LogShaderCompilers: Display: Shaders left to compile 848
+[2018.08.26-22.22.12:866][ 68]LogShaderCompilers: Display: Shaders left to compile 838
+[2018.08.26-22.22.13:640][ 98]LogShaderCompilers: Display: Shaders left to compile 828
+[2018.08.26-22.22.14:040][112]LogShaderCompilers: Display: Shaders left to compile 818
+[2018.08.26-22.22.14:864][144]LogShaderCompilers: Display: Shaders left to compile 808
+[2018.08.26-22.22.17:235][230]LogShaderCompilers: Display: Shaders left to compile 798
+[2018.08.26-22.22.17:847][252]LogShaderCompilers: Display: Shaders left to compile 788
+[2018.08.26-22.22.18:939][290]LogShaderCompilers: Display: Shaders left to compile 778
+[2018.08.26-22.22.20:618][350]LogShaderCompilers: Display: Shaders left to compile 768
+[2018.08.26-22.22.21:444][381]LogShaderCompilers: Display: Shaders left to compile 758
+[2018.08.26-22.22.25:183][522]LogShaderCompilers: Display: Shaders left to compile 748
+[2018.08.26-22.22.25:203][523]LogShaderCompilers: Display: Shaders left to compile 738
+[2018.08.26-22.22.26:045][552]LogShaderCompilers: Display: Shaders left to compile 728
+[2018.08.26-22.22.27:359][601]LogShaderCompilers: Display: Shaders left to compile 718
+[2018.08.26-22.22.29:092][664]LogShaderCompilers: Display: Shaders left to compile 708
+[2018.08.26-22.22.30:058][700]LogShaderCompilers: Display: Shaders left to compile 698
+[2018.08.26-22.22.34:430][852]LogShaderCompilers: Display: Shaders left to compile 688
